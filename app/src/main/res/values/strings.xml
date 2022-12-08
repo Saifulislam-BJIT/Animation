@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="rotation">Rotation</string>
+    <string name="rotation_xml">Rotation Xml</string>
+</resources>
