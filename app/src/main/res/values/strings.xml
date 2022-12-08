@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Animation</string>
     <string name="rotation">Rotation</string>
-    <string name="rotation_xml">Rotation Xml</string>
+    <string name="rotation_xml">Rotation Infinite</string>
+    <string name="translation">Translation</string>
+    <string name="scaler">Scaler</string>
+    <string name="translation_xml">Translation Infinite</string>
 </resources>

@@ -7,7 +7,7 @@
     android:layout_margin="8dp"
     tools:context=".MainActivity">
 
-<!--    rotation by code-->
+<!--    animation by code-->
     <LinearLayout
         android:id="@+id/rotation_layer"
         android:layout_width="match_parent"
@@ -19,23 +19,48 @@
             android:id="@+id/rotation"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/rotation" />
+            android:text="@string/rotation"
+            style="?attr/materialButtonOutlinedStyle"/>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/translate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:text="@string/translation"
+            style="?attr/materialButtonOutlinedStyle"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scaler"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:text="@string/scaler"
+            style="?attr/materialButtonOutlinedStyle"/>
 
     </LinearLayout>
 
+<!--    animation by xml -->
     <LinearLayout
         android:id="@+id/rotation_layer_xml"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/rotation_layer"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="horizontal">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/rotation_xml"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/rotation_xml" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/translate_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/translation_xml"
+            android:layout_marginHorizontal="8dp"/>
 
 
     </LinearLayout>
