@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         ball3 = findViewById(R.id.ball_3)
         ball4 = findViewById(R.id.ball_4)
 
+//        rotation by object animatior
         rotation.setOnClickListener {
             val animationBall1 = ObjectAnimator.ofFloat(ball1, View.ROTATION, 0f, 360f)
             animationBall1.duration = 1000
@@ -55,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             animationBall4.start()
         }
 
+//        rotation by xml
         rotationXml.setOnClickListener {
             val animation = AnimationUtils.loadAnimation(this, R.anim.rotation)
             animation.duration = 1000
@@ -74,6 +76,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+//        translate by object animator
         translate.setOnClickListener {
             val animator = ObjectAnimator.ofFloat(ball1, View.TRANSLATION_Y, 0f, -400f)
             animator.repeatCount = 3
@@ -100,6 +103,7 @@ class MainActivity : AppCompatActivity() {
             animator4.start()
         }
 
+//        translate by xml
         translateXml.setOnClickListener {
             val animator = AnimationUtils.loadAnimation(this, R.anim.translation)
             animator.duration = 1000
@@ -118,6 +122,7 @@ class MainActivity : AppCompatActivity() {
             ball4.startAnimation(animator4)
         }
 
+//        scale by object animator
         scaler.setOnClickListener {
             val scaleX = PropertyValuesHolder.ofFloat(View.SCALE_X, 2f)
             val scaleY = PropertyValuesHolder.ofFloat(View.SCALE_Y, 2f)
